@@ -4,7 +4,8 @@
   "description": "y",
   "main": "y",
   "scripts": {
-    "test": "node testFormatName.js"
+    "test": "node testFormatName.js",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/RohitRaj766/git_github/issues"
   },
-  "homepage": "https://github.com/RohitRaj766/git_github#readme"
+  "homepage": "https://github.com/RohitRaj766/git_github#readme",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
 }
