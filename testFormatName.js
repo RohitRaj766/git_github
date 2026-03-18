@@ -13,6 +13,8 @@ const testCases = [
 
 console.log("Running tests...\n");
 
+let failedTests = 0;
+
 testCases.forEach((test, index) => {
     const { input, expected } = test;
     const result = formatName(input);
@@ -21,7 +23,13 @@ testCases.forEach((test, index) => {
         console.log(`✅ Test ${index + 1} Passed: "${input}" → "${result}"`);
     } else {
         console.error(`❌ Test ${index + 1} Failed: "${input}" → "${result}", expected: "${expected}"`);
+        failedTests++;
     }
 });
 
 console.log("\nAll tests completed.");
+
+// Exit with error code if any tests failed
+if (failedTests > 0) {
+    process.exit(1);
+}
