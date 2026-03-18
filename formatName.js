@@ -8,10 +8,10 @@
 function formatName(name) {
     if (!name) return "";
     return name
-        // .trim()
-        // .split(/\s+/) // split by one or more spaces
-        // .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-        // .join(' ');
+        .trim()
+        .split(/\s+/) // split by one or more spaces
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
 }
 
 // Example usage with user input
